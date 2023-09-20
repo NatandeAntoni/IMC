@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="corpo"> <br><br><br><br><br>
+    <h1 class="título">CALCULAR IMC DE:</h1>
+    <p class="texto-imc">
+
+<!--Fazendo o Script JAVA-->
+              <script>
+                      function calcular(peso, altura){
+                               return peso / (altura ** 2);
+                      }
+                      alert("CLIQUE EM OK PARA COMEÇAR");
+
+//Criando Variáveis
+                      let nome = prompt ("Qual seu nome ?");
+                      let peso = prompt (nome + ", Qual seu peso ?");
+                      let altura = prompt (nome + ", Qual a sua altura ? ");
+                      let calculo = calcular (peso, altura );
+                      let texto = ", Seu IMC é: ";
+
+//Colocando duas casas decimais
+                      let = calculo.toFixed(2);
+
+//Formatando Texto
+                      document.write(nome.italics() + texto.bold() + imc.fontcolor("blue"));
+
+              </script>
+
+<!--Termino do Script JAVA-->
+        </p>
+</body>
+</html>
